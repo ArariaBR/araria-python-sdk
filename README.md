@@ -14,7 +14,7 @@ pip install araria-sdk
 from araria_sdk import ArariaClient
 
 # Initialize the client
-client = ArariaClient(api_key="your-api-key")
+client = ArariaClient(api_key="your-api-key", base_url="https://prod-api.araria.com.br")
 
 # Generate images with Runware
 response = client.generate_runware(prompt="your prompt", negative_prompt="your negative prompt")
